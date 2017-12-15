@@ -1,6 +1,22 @@
-<h1>Dynamic Loading of jQuery + Plugin</h1>
-<button (click)="loadJQuery()">Load</button>
-<button (click)="activate()">Activate</button>
+<h1>Dynamic Loading of jQuery + Plugins</h1>
+
+Open Dev-Tools and watch the network tab ...
+
+<div>
+  <h2>Plugin 1: LazyLoad</h2>
+  <button (click)="loadLazyloadPlugin()">Load jQuery & LazyLoad Plugin</button>
+  <button (click)="activateLazyloadPlugin()">Activate LazyLoad Plugin</button>
+  <div>Scroll down to the bottom of the page to see the picture</div>
+</div>
+
+<div>
+  <h2>Plugin 2: Rangeslider</h2>
+  <button (click)="loadAndActivateRangesliderPlugin()">Load and Activate jQuery & Rangeslider Plugin</button>
+</div>
+
+<div>
+  <input type="range">
+</div>
 
 <div class="far-away">
   <img data-original="http://www.jquerypowertour.com/images/logo.jpg" class="lazy">

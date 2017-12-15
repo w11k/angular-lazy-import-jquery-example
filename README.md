@@ -7,7 +7,7 @@ If you have to, it would be great to include jQuery only when it's really unavoi
 
 In this small example we show how to import jQuery dynamically,
 so you don't have to include it in your bulk of javascript code loaded at app startup.
-We use EcmaScript's new dynamic import statement to achieve that. TypeScript and AngularCLI (WebPack) already support this statement.
+We use EcmaScript's new function-like dynamic import to achieve that. TypeScript and AngularCLI (WebPack) already support this.
 
 
 ## How to

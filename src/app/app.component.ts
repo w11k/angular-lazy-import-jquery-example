@@ -6,17 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private powertour: Promise<{ activate }>;
+  private lazylod: Promise<{ activate }>;
 
-  loadJQuery() {
-    this.powertour = import('./powertour');
+  loadLazyloadPlugin() {
+    this.lazylod = import('./plugin-lazyload');
   }
 
-  async activate() {
-    if (this.powertour) {
-      const powertour = await this.powertour;
+  async activateLazyloadPlugin() {
+    if (this.lazylod) {
+      const plugin = await this.lazylod;
 
-      powertour.activate();
+      plugin.activate();
     }
+  }
+
+  async loadAndActivateRangesliderPlugin() {
+    const plugin = await import('./plugin-rangeslider');
+    plugin.activate();
   }
 }
