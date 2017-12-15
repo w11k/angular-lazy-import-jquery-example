@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  private powertour: Promise<{ activate }>;
+
+  loadJQuery() {
+    this.powertour = import('./powertour');
+  }
+
+  async activate() {
+    if (this.powertour) {
+      const powertour = await this.powertour;
+
+      powertour.activate();
+    }
+  }
 }
