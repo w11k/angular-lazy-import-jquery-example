@@ -1,6 +1,6 @@
 {
-  "name": "jquery-test",
-  "version": "0.0.0",
+  "name": "angular-lazy-import-jquery-example",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
